@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        <a href="index.html">Back to Home</a>
+    </header>
+
+    <main>
+        <h2>Create New Post</h2>
+        <form id="newPostForm">
+            <input type="text" id="postTitle" placeholder="Enter post title">
+            <textarea id="postContent" placeholder="Write your post here..."></textarea>
+            <button type="submit">Save Post</button>
+            <button type="button" onclick="window.location.href='index.html'">Cancel</button>
+        </form>
+        <p id="errorMsg" style="color:red;"></p>
+    </main>
+
+    <footer>
+        <p>My Blog 2025</p>
+    </footer>
+
+    <script src="new-post.js"></script>
+</body>
+</html>
