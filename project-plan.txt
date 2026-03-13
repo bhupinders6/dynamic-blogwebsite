@@ -1,0 +1,21 @@
+Project Name: Dynamic Blog Website
+
+Pages I need to make:
+- index.html
+- new-post.html
+- post.html
+
+What the website will do:
+User can:
+    - create a new post
+    - can read all posts on the homepage
+    - can edit a post
+    - can delete a post
+    - all posts will be saved in local storage.
+
+Files I will create:
+- index.html
+- new-post.html
+- post.html
+- styles.css
+
