@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        <a href="index.html">Back to Home</a>
+    </header>
+
+    <main>
+        <a href="index.html" class="btn-back">← Back to all posts</a>
+
+        <!-- view post section -->
+        <div id="viewPost" class="post-detail">
+            <h2 id="postTitle"></h2>
+            <p id="postContent"></p>
+            <button class="btn-edit" onclick="showEditForm()">Edit</button>
+            <button class="btn-delete" onclick="deletePost()">Delete</button>
+        </div>
+
+        <!-- edit post section hidden by default -->
+        <div id="editPost" style="display:none;">
+            <h2>Edit Post</h2>
+            <form id="editForm">
+                <input type="text" id="editTitle" placeholder="Edit title">
+                <textarea id="editContent" placeholder="Edit content"></textarea>
+                <button type="submit">Save Changes</button>
+                <button type="button" onclick="cancelEdit()">Cancel</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>My Blog 2025</p>
+    </footer>
+
+    <script src="post.js"></script>
+</body>
+</html>
